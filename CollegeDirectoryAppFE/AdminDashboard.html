@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard</title>
+    <style>
+      /* Add some basic CSS styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      #sidebar {
+        height: 100vh;
+        padding: 20px;
+        background-color: #e1e1e1;
+        float: left;
+        width: 250px;
+      }
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #sidebar {
+            height: 100vh;
+            padding: 20px;
+            background-color: #e1e1e1;
+            float: left;
+            width: 250px;
+        }
+
+        #sidebar h2 {
+            margin-top: 0;
+        }
+
+        #content {
+            padding: 20px;
+            float: left;
+            width: calc(100% - 250px);
+        }
+
+        /* Style the navigation links */
+        #sidebar a {
+            color: #333;
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        #sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style the logout button */
+        #logout {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #d9534f;
+            color: white;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        #logout:hover {
+            background-color: #c9302c;
+        }
+    </style>
+    </style>
+  </head>
+  <body>
+    <div id="sidebar">
+      <h2>Admin Dashboard</h2>
+      <a href="./StudentRegisteration.html">Register Student</a>
+      <a href="./UpdateStudent.html">Update Student</a>
+      <a href="./DeleteStudent.html">Delete Student</a>
+      <a href="./FacultyRegisteration.html">Register Faculty</a>
+      <a href="./UpdateFaculty.html">Update Faculty</a>
+      <a href="./DeleteFaculty.html">Delete Faculty</a>
+      <a href="#" id="logout">Logout</a>
+    </div>
+    <script>
+        document.getElementById('logout').addEventListener('click', function() {
+            // Add your logout functionality here
+            alert('Logged out successfully!');
+            window.location.href = 'login.html'; // Redirect to login page
+        });
+    </script>
+  </body>
+</html>
